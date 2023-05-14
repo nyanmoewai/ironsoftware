@@ -1,0 +1,377 @@
+:root {
+  --bs-primary: #2C0F29;
+  --bs-secondary: #C6AAC6;
+  --bs-primary-rgb: 45, 15, 41;
+  --bs-secondary-rgb: 142, 96, 142;
+  --bs-btn-primary-color: #2C0F29;
+  --bs-btn-secondary-color: #C6AAC6;
+
+  --color-purple-100: rgba(198, 170, 198, var(--bg-opacity));
+  --color-purple-200: rgba(142, 96, 142, var(--bg-opacity));
+  --color-purple-300: rgba(44, 15, 41, var(--bg-opacity));
+  --color-purple-400: rgba(23, 6, 23, var(--bg-opacity));
+
+  --bg-opacity : 1;
+
+  --color-red-100: rgba(224, 26, 89, var(--bg-opacity));
+  --color-red-200: rgba(221, 26, 55, var(--bg-opacity));
+
+  --text-color: #fff;
+}
+
+@font-face {
+  font-family: "Latos Black";
+  src: url('../fonts/Lato-Black.ttf');
+}
+
+@font-face {
+  font-family: "Latos Bold";
+  src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Latos Light";
+  src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: "Latos";
+  src: url('../fonts/Lato-Regular.ttf');
+}
+
+.bg-opacity-10 {
+    --bg-opacity: 0.1 !important;
+}
+
+.bg-opacity-30 {
+  --bg-opacity: 0.3 !important;
+}
+
+.bg-opacity-80 {
+    --bg-opacity: 0.8 !important;
+  }
+
+body {
+    color: var(--text-color) !important;
+    font-family: 'Latos', sans-serif !important;
+    line-height: 1.8em;
+    font-size: 16px;
+    word-spacing: 0.2rem;
+}
+
+body p {
+    font-weight: lighter;
+    font-family: 'Latos Light', sans-serif !important;
+}
+
+nav a {
+    font-size: 11px;
+    color: var(--text-color) !important;
+}
+
+.bg-purple-100 {
+    --bg-opacity: 1;
+    background-color: rgba(198, 170, 198, var(--bg-opacity));
+}
+
+.bg-purple-200 {
+    --bg-opacity: 1;
+    background-color: rgba(142, 96, 142, var(--bg-opacity));
+}
+
+.bg-purple-300 {
+  background-color: rgba(44, 15, 41, var(--bg-opacity));
+}
+
+.bg-purple-400 {
+    background-color: rgba(23, 6, 23, var(--bg-opacity));
+}
+
+.border-purple-200 {
+  border-color: var(--color-purple-200) !important;
+}
+
+.border-purple-300 {
+  border-color: var(--color-purple-300) !important;
+}
+
+.text-purple-100 {
+  color: var(--color-purple-100) !important;
+}
+
+.text-purple-200 {
+  color: var(--color-purple-200) !important;
+}
+
+.text-purple-400 {
+  color: var(--color-purple-400) !important;
+}
+
+.bg-red-100 {
+  background-color: rgb(224, 26, 89);
+}
+
+.hover\:bg-red-200:hover {
+    background-color: rgb(221, 26, 55);
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+.email-input-group {
+  border-color: #c6aac6;
+  padding: 0;
+}
+
+.email-input-group input:focus{
+  box-shadow: none !important;
+}
+
+.sing-up-now-right-arrow::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-right: 0;
+  border-bottom: 0.3em solid transparent;
+  border-left: 0.3em solid;
+}
+
+.text-bold {
+    font-family: 'Latos Bold', sans-serif !important;
+}
+
+.text-bolder {
+  font-family: 'Latos Black', sans-serif !important;
+}
+
+.text-light {
+    font-family: 'Latos Light', sans-serif !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.mask-gradient {
+    position: relative;
+    background-image: linear-gradient(to left bottom, rgba(36,14,37,1) 15%, rgba(36,14,37,0));
+    filter: blur(1rem);
+    top: -30px;
+    right: -20px;
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(to right, #8E608E, #402640 75%, #371A34);
+}
+
+.file-icon {
+  top: 7rem !important;
+  left: 11.5rem;
+  height: 200px;
+}
+
+.file-extension {
+  background-color: #00549E;
+  font-family: "Latos Black";
+  font-size: 1.75rem;
+  text-align: center;
+  top: 15rem !important;
+  left: 17rem !important;
+  padding: 0.25rem 0.75rem;
+}
+
+/* /////////////////// Custom ////////////////// */
+.text-small {
+    font-size: 0.875rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.py-6 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+.py-7 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+/* /////////////////// Responsive ////////////////// */
+.file-icon, .file-extension {
+    display: none;
+}
+
+.content-box {
+    padding: 3rem 1rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+.highlight {
+    text-transform: uppercase;
+    font-family: 'Latos', sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .highlight {
+        text-transform: none;
+        font-family: 'Latos Light', sans-serif;
+        font-weight: lighter;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .highlight {
+        text-transform: none;
+        font-family: 'Latos Light', sans-serif;
+        font-weight: lighter;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .content-box {
+        padding: 3rem 8rem;
+    }
+
+    .file-icon, .file-extension {
+        display: block;
+    }
+
+    .highlight {
+        text-transform: none;
+        font-family: 'Latos Light', sans-serif;
+        font-weight: lighter;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .content-box {
+        padding: 3rem 8rem;
+    }
+
+    .file-icon, .file-extension {
+        display: block;
+    }
+
+    .lg-highlight {
+
+    }
+}
+
+.email-input-group {
+    display: flex;
+    background: #fff;
+    border-radius: var(--bs-border-radius-xxl) !important;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(198, 170, 198, var(--bg-opacity));
+    margin-bottom: 1rem !important;
+}
+
+.hero-section-title {
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    font-family: 'Latos Black', sans-serif;
+}
+
+.hero-section-image {
+    height: 680px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-family: 'Latos Black', sans-serif;
+}
+
+.section-sub-title {
+    font-size: 1.125rem;
+    font-family: 'Latos Bold', sans-serif;
+}
+
+.enhanced-section-title {
+    color: rgb(198, 170, 198);
+}
+
+.coming-soon-logo {
+    position: absolute;
+    top: -40px;
+    right: -50px;
+}
+
+#footer {
+    background-color: rgb(23, 6, 23);
+}
+
+#footer .email-input-group {
+    border: 3px solid #E7EEF0 !important;
+}
+
+#early-access-section .early-access-badge {
+    border: 2px solid #431F43;
+    width: 100%;
+}
+
+/* Ribbon: https://codepen.io/nxworld/pen/oLdoWb */
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+}
+.ribbon::before, .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+}
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 250px;
+    padding: 15px 0;
+    background-color: #64c2a0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    color: #fff;
+    font: 700 18px/1 'Latos', sans-serif;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* top right*/
+.ribbon-top-right {
+    top: -10px;
+    right: -10px;
+}
+.ribbon-top-right::before, .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+.ribbon-top-right::before {
+    top: 0;
+    left: 0;
+}
+.ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+}
+.ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+    box-shadow: 2px 0px 5px #b8ffe5;
+}
